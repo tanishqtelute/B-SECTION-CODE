@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>Academic Excellence Scholarship Program</title>
+</head>
+<body bgcolor="silver">
+    <form>
+        <h1 align="center">Scholarship Registration Form</h1>
+        <h2 align="center">SB JAIN INSTITUTE OF TECHNOLOGY MANAGEMENT AND RESEARCH NAGPUR</h2>
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+            <table width="100%">
+                <tr>
+                    <td width="50%">
+                        <label for="first_name">First Name:</label><br>
+                        <input type="text" id="first_name" name="first_name" required size="30">
+                    </td>
+                    <td width="50%">
+                        <label for="last_name">Last Name:</label><br>
+                        <input type="text" id="last_name" name="last_name" required size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" required size="65">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" required size="30">
+                    </td>
+                    <td>
+                        <label for="dob">Date of Birth:</label><br>
+                        <input type="date" id="dob" name="dob" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="address">Full Address:</label><br>
+                        <textarea id="address" name="address" rows="3" cols="65" required></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Academic Information</b></legend>
+            <table width="100%">
+                <tr>
+                    <td width="50%">
+                        <label for="school">Current College</label><br>
+                        <input type="text" id="school" name="school" required size="30">
+                    </td>
+                    <td width="50%">
+                        <label for="gpa">Current GPA:</label><br>
+                        <input type="number" id="gpa" name="gpa" min="0" max="4" step="0.01" required size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="major">Branch:</label><br>
+                        <input type="text" id="major" name="major" required size="30">
+                    </td>
+                    <td>
+                        <label for="grad_year">Current Graduation Year:</label><br>
+                        <input type="number" id="grad_year" name="grad_year" min="2024" max="2030" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="achievements">Academic Achievements (max 200 words):</label><br>
+                        <textarea id="achievements" name="achievements" rows="5" cols="65" maxlength="1000" required></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>Supporting Documents</b></legend>
+            <table width="100%">
+                <tr>
+                    <td width="50%">
+                        <label for="transcript">Upload Photo</label><br>
+                        <input type="file" id="transcript" name="transcript" accept=".pdf" required>
+                    </td>
+                    <td width="50%">
+                        <label for="essay">Upload Adhar Card</label><br>
+                        <input type="file" id="essay" name="essay" accept=".pdf,.doc,.docx" required>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Final Steps</b></legend>
+            <p>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I certify that all information provided is accurate and complete to the best of my knowledge.</label>
+            </p>
+            <p align="center">
+                <input type="submit" value="Submit">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
